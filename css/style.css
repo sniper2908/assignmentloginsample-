@@ -1,0 +1,30 @@
+body{
+    background-color: blueviolet;
+}
+.imag{
+    
+    margin: auto;
+    display: block;
+}
+.heading{
+    margin:40px 60px 40px 250px;
+    color: aliceblue;
+}
+.Usrname{
+   margin: 0px 200px 10px 200px;
+}
+.email{
+ margin:0px 200px 10px 200px;   
+}
+.password{
+    margin:0px 200px 10px 200px;
+}
+.pasword{
+    margin:0px 200px 10px 200px;
+}
+.Cnfrmpswrd{
+    margin:0px 200px 10px 200px;
+}
+.Submit{
+    margin:0px 200px 10px 250px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="styelsheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+
+</head>
+<body>
+<div class="fluid-container" style="border:2px;background-color: rgb(153, 28, 140);display:flex;height: 100%;">
+    
+    <div class="container" style="border:2px; background-color:#fff;">
+        <div class="main" style="border:2px;border-color:black;background-color: whitesmoke;margin: 100px 200px;">
+            <img width="60px;" src="./images/login.png" style="margin:0px 350px;">
+            <footer>
+                <a href="register.html" style="position:fixed;margin:250px 0px 50px 300px; ">DO have an account?SignUp</a>
+            </footer>
+           
+            <div class="scnd" style="display: block;margin: 0px 300px;">
+                       <div class="username"style="margin:10px;">
+                          <h2>Login</h2>
+                          
+                            <input type="text" id="Usrname" placeholder="Username" required>
+                           
+                      </div>
+                      <div class="Password"style="margin:10px;">
+                        <span></span>
+                            <input type="password"id="paswrd" placeholder="Password" required>
+                      </div>
+                      <div>
+                          <label><a href="forgotPswrd" style="margin:10px;">ForgotPassword</a></label>
+                      </div>
+                      <div class="button" style="margin:10px;">
+                            <input type="button" onclick="myFunction()" name="btn"value="login">
+                            
+                      </div>
+                      
+
+            </div>
+        </div>
+        
+               
+    </div>
+</div>
+<script>
+        function myFunction() {
+
+            let z=document.getElementById("Usrname").value;
+             let y=document.getElementById("paswrd").value;
+            let d=JSON.parse(localStorage.getItem("Usrname"));
+            let e=JSON.parse(localStorage.getItem("password"));
+            
+             if(z==d && y==e){
+                 alert("log in successfully");
+                 window.open("home.html");
+             }
+             else{
+                 alert(" user does not exist");
+             }
+            } 
+            </script>
+            
+</body>
+</html>
